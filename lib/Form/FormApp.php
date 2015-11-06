@@ -1,8 +1,8 @@
 <?php
-
 require_once __DIR__ . "/BaseClass.php";
-require_once __DIR__ . "/Factory/Client1FormFactory.php";
-require_once __DIR__ . "/Factory/Client2FormFactory.php";
+
+use lib\Form\Factory\Client1FormFactory;
+use lib\Form\Factory\Client2FormFactory;
 
 class FormApp extends BaseClass
 {
@@ -10,6 +10,7 @@ class FormApp extends BaseClass
 
     public function __construct()
     {
+        parent::__construct();
         $this->_client = urlencode($_GET['client']);
     }
 

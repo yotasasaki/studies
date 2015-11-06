@@ -1,11 +1,12 @@
 <?php
+namespace lib\Form\Factory;
 
-require_once __DIR__ . "/../Interface/FormFactoryInterface.php";
-require_once __DIR__ . "/../Form.php";
-require_once __DIR__ . "/../FormHandler.php";
-require_once __DIR__ . "/../Extension/Client2ExtensionFormHandler.php";
+use lib\Form\Interfaces\FormFactoryInterface; 
+use lib\Form\Form;
+use lib\Form\FormHandler;
+use lib\Form\Extension\Client2ExtensionFormHandler;
 
-class Client2FormFactory implements FormFactoyInterface 
+class Client2FormFactory implements FormFactoryInterface 
 {
     public function createMainForm()
     {

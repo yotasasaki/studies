@@ -1,4 +1,5 @@
 <?php
+namespace lib\Form;
 
 class Form
 {

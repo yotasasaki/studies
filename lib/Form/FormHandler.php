@@ -1,6 +1,9 @@
 <?php
+namespace lib\Form;
 
-require_once __DIR__ . "/Interface/FormInterface.php";
+use lib\Form\Interfaces\FormInterface;
+
+#require_once __DIR__ . "/Interfaces/FormInterface.php";
 
 class FormHandler implements FormInterface
 {

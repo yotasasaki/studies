@@ -1,7 +1,8 @@
 <?php
+namespace lib\Form\Extension;
 
-require_once __DIR__ . "/../Interface/ExtensionFormInterface.php";
-require_once __DIR__ . "/ExtensionForm.php";
+use lib\Form\Interfaces\ExtensionFormInterface;
+use lib\Form\Extension\ExtensionForm;
 
 class Client1ExtensionFormHandler implements ExtensionFormInterface
 {
